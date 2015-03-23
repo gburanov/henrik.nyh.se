@@ -1,28 +1,17 @@
+---
+---
+
 $(document).ready(function () {
-    var $slide1 = $('#slide1');
-    var $slide2 = $('#slide2');
-    var $slide3 = $('#slide3');
-    var $s1 = $('#s1');
-    var $s2 = $('#s2');
-    var $s3 = $('#s3');
+    {% for section in site.data.projects %}
+        {% assign project = section[1] %}
+        var $slide{{project.short_link}} = $('#slide{{project.short_link}}');
+        var $menu{{project.short_link}} = $('#menu{{project.short_link}}');
 
-    masLoad($slide1,'.post-box',$s1);
-
-    $s1.click(function(){
-        masLoad($slide1,'.post-box',$s1);
-    });
-    $s2.click(function(){
-        masLoad($slide2,'.post-box2',$s2);
-    });
-    $s3.click(function(){
-        masLoad($slide3,'.post-box3',$s3);
-    });
-
-    $(window).resize(function () {
-        masLoad($slide1,'.post-box',$s1);
-        masLoad($slide2,'.post-box2',$s2);
-        masLoad($slide3,'.post-box3',$s3);
-    });
+        $menu{{project.short_link}}.click(function(){
+            masLoad($slide{{project.short_link}},'.post-box',$menu{{project.short_link}});
+        });
+        masLoad($slide{{project.short_link}},'.post-box',$menu{{project.short_link}});
+    {% endfor %}
 
     $('.carousel').carousel({
         pause: true,

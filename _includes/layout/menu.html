@@ -14,7 +14,7 @@
                     <ul class="nav navbar-nav navbar-right text-center">
                         {% for section in site.data.projects %}
                         {% assign project = section[1] %}
-                            <li id="id{{project.short_link}}" class="clink">
+                            <li id="menu{{project.short_link}}" class="clink">
                                 <a href="#" data-target="#myCarousel" data-slide-to="0" class="active">{{project.name}}</a>
                             </li>
                         {% endfor %}
