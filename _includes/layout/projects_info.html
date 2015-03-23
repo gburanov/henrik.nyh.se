@@ -1,0 +1,39 @@
+<div id="home" class="header">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {% for section in site.data.projects %}
+            {% assign project = section[1] %}
+            <div class="item">
+                <div class="row">
+                    <div class="panel panel-success col-md-6 col-md-offset-3">
+                        <div class="panel-heading">{{project.name}}</div>
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div id="slide1" class="masonry">
+                        <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                            <img class="img-responsive img-thumbnail" src="http://tiaurus.info/wp-content/uploads/2012/08/yarkoe-i-sochnoe-gipperrealistichnoe-iskusstvo-dennis-wojtkiewicz-3.jpg?76b437">
+                        </div>
+                        <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                            <img class="img-responsive img-thumbnail" src="http://i.imgur.com/ucRTGcx.jpg">
+                        </div>
+                        <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                            <img class="img-responsive img-thumbnail" src="http://i.imgur.com/ylMPudK.gif">
+                        </div>
+                        <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                            <img class="img-responsive img-thumbnail" src="http://i.imgur.com/kToRhVC.jpg">
+                        </div>
+                        <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                            <img class="img-responsive img-thumbnail" src="http://4.bp.blogspot.com/-xt6GuKpm6fI/Ul65xMBi5CI/AAAAAAAAEK4/cmmpD4OQsec/s1600/windmill_amsterdam_hermit_crab_shell.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
