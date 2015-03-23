@@ -1,0 +1,121 @@
+html,
+body {
+    font-family:'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Open Sans', sans-serif;
+}
+h3, h4, h5 {
+    font-family:'Raleway', sans-serif;
+    font-weight: 350;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: #8ebebc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.header {
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    background: #fff;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#myCarousel {
+    width:100%;
+    height:100%;
+}
+.carousel, .item, .active {
+    height:100%;
+}
+.carousel-inner {
+    height:100%;
+}
+.carousel {
+    margin-bottom: 0;
+}
+
+.img-thumbnail {
+    padding: 10px;
+}
+.post-box, .post-box2 , .post-box3 {
+    margin: 10px 0 10px 0;
+}
+
+
+/**** Transitions for Masonry ****/
+
+.masonry {
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -ms-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+
+@media (min-width: 768px) {
+
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left:  15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left:  0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+}
