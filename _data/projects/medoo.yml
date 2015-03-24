@@ -1,7 +1,9 @@
 name: Medoo
 short_link: medoo
 
-website: www.medoo.ru
+website: http://www.medoo.ru
+description:
+duration: 9 monthes
 
 technologies:
   - devise for authentication
@@ -12,4 +14,8 @@ technologies:
   - faye for messaging
 
 images:
-  -
+  - /medoo/medoo1.png
+  - /medoo/medoo2.png
+  - /medoo/medoo3.png
+  - /medoo/medoo4.png
+  - /medoo/medoo5.png
