@@ -1,12 +1,11 @@
 name: Estate
 short_link: estate
-active: true
 
 website: http://pm-exp.ru
 description: Rails CMS (Refinery) for Moscow estate agency
 duration: 2 weeks
 
-knowledge:
+technologies:
   - CMS based on most popular CMS engine for Ruby
   - database search using refinerycms-search
   - adding news using refinerycms-news

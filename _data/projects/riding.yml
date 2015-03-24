@@ -1,3 +1,21 @@
 name: RidingAnyway
-website: http://splinster.gburanov.me
 short_link: riding
+
+website: http://splinster.gburanov.me
+description: Website to rent equpment from privates (like airbnb but for sports)
+duration: 6 monthes
+
+technologies:
+  - Maps api using gmap4rails
+  - Geolocation API using geokit
+  - Testing using capistrano
+  - Omniauth social network integration
+  - Google drive integration
+  - Foundation frontend
+  - Image downloading using paperclip
+
+images:
+  - /ridinganyway/riding1.png
+  - /ridinganyway/riding2.png
+  - /ridinganyway/riding3.png
+  - /ridinganyway/riding4.png
