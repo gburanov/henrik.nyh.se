@@ -13,7 +13,7 @@ $(document).ready(function () {
         masLoad($slide{{project.short_link}},'.post-box',$menu{{project.short_link}});
     {% endfor %}
 
-    $('.carousel').carousel({
+    $('#myCarousel').carousel({
         pause: true,
         interval: false
     });

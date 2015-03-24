@@ -1,3 +1,15 @@
 name: Medoo
-website: www.medoo.ru
 short_link: medoo
+
+website: www.medoo.ru
+
+technologies:
+  - devise for authentication
+  - omniauth for social networks integration
+  - bing_translator for translating services
+  - activemerchant for paypal integration
+  - houston for apple and android notifications
+  - faye for messaging
+
+images:
+  -

@@ -13,13 +13,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right text-center">
                         {% for section in site.data.projects %}
-                        {% assign project = section[1] %}
-                           {% if project.name == 'Medoo' %}
-                                <li id="menu{{project.short_link}} active" class="clink">
-                           {% else %}
-                                <li id="menu{{project.short_link}}" class="clink">
-                           {% endif %}
-                                <a href="#" data-target="#myCarousel" data-slide-to="0" class="active">{{project.name}}</a>
+                        {% assign project_it = section[1] %}
+                            <li>
+                                <a href="/projects/{{project_it.short_link}}.html" >{{project_it.name}}</a>
                             </li>
                         {% endfor %}
                     </ul>
