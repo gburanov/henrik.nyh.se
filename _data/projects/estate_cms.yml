@@ -1,3 +1,18 @@
 name: Estate
-website: www.estate.ru
 short_link: estate
+active: true
+
+website: www.estate.ru
+description:
+
+knowledge:
+  -
+
+images:
+  - image:
+      url:
+      description:
+
+  - image:
+      url:
+      description:
