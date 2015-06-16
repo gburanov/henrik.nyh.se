@@ -1,0 +1,14 @@
+name: Estate forum
+short_link: estate_forum
+
+website: http://forum.pm-exp.ru
+description: Discourse-based forum for Moscow estate agency
+duration: 2 weeks
+
+technologies:
+  - Discourse-based forum with some tuning
+
+images:
+  - /estate_forum/forum1.png
+  - /estate_forum/forum2.png
+
